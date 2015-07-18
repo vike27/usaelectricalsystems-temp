@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+//= depend_on_asset "globe1.jpg"
+
 .banner {
   height: 600px;
   background-image: image-url("globe1.jpg"); 
