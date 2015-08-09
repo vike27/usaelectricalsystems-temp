@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  service: MyString
+  heading1: MyString
+  body1: MyText
+  heading2: MyString
+  body2: MyText
+  information: MyText
+
+two:
+  service: MyString
+  heading1: MyString
+  body1: MyText
+  heading2: MyString
+  body2: MyText
+  information: MyText

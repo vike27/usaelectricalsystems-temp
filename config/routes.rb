@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :blogs
+  resources :services
   resources :areas
   devise_for :admins
   # The priority is based upon order of creation: first created -> highest priority.
