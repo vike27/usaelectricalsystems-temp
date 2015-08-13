@@ -19,6 +19,7 @@
           
           <ul class="nav nav-pills navbar-right">
               <li>
+                   <% if current_admin.present? %>
                 <%= link_to 'Service Areas', areas_path %>
               </li>
               <li>
@@ -28,7 +29,6 @@
                 <%= link_to 'Blog', '#blog' %>
               </li>
               <li>  
-                  <% if current_admin.present? %>
                     <%= link_to 'Dashboard', 'dashboard' %>
               </li>
               <li>

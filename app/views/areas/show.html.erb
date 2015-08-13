@@ -26,6 +26,13 @@
       <p>
         <%= @area.information %>
       </p>
+
+      <% if current_admin.present? %>
+      <p>
+        <%= link_to 'Destroy', @area, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </p>
+      <% end %>
+
     </br>
     </br>
   </div>
