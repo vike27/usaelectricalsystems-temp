@@ -2,14 +2,18 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:700,300,600,400);
 
 //= depend_on_asset "globe1.jpg"
 
 body {
-  font-family: 'Rokkitt', serif;
+  font-family: 'Open Sans', sans-serif;
   h1 {
     font-size: 44px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  a {
+  font-family: 'Open Sans', sans-serif;
   }
 }
 
@@ -58,5 +62,8 @@ body {
 }
 
 .navbar {
+  .nav-pills {
+    margin-top: 5px;
+  }
   margin-bottom: 0px;
 }
