@@ -1,17 +1,22 @@
 <div class="container-fluid">
   <div class="col-sm-4 col-sm-offset-4">
     <p id="notice"><%= notice %></p>
-
+      </br>
       <h1>Areas We Serve</h1>
-
+      </br>
+      </br>
         <div>
           <% @areas.each do |area| %>
-              <div><%= area.city %></div>
+              <div><p style="text-transform: capitalize; font-size: 16px;"><%= area.city %></p></div>
+              <div style="font-size:14px; margin-top: 5px;"><i><%= link_to "See what services we offer in #{area.city}", area %></i></div>
+              <hr>
           <% end %>
         </div>
 
       <br>
 
+      <% if current_admin.present? %> 
       <%= link_to 'New Area', new_area_path %>
+      <% end %>
   </div>
 </div>

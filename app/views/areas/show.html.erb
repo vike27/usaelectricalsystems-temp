@@ -29,7 +29,9 @@
 
       <% if current_admin.present? %>
       <p>
-        <%= link_to 'Destroy', @area, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Destroy', @area, method: :delete, data: { confirm: 'Are you sure?' } %> |
+        <%= link_to 'Edit', edit_area_path(@area) %> |
+        <%= link_to 'New Area', new_area_path %>
       </p>
       <% end %>
 
