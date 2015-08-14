@@ -12,6 +12,9 @@ body {
     font-size: 44px;
     font-family: 'Open Sans', sans-serif;
   }
+  h4 {
+    font-size: 20px;
+  }
   a {
   font-family: 'Open Sans', sans-serif;
   }
@@ -62,8 +65,30 @@ body {
 }
 
 .navbar {
+  a {
+    color: white;
+  }
+  a:visited {
+    color: #E2E2E2;
+  }
+  a:hover {
+    color: #333;
+  }
+  .navbar-brand {
+    color: white;
+  }
   .nav-pills {
     margin-top: 5px;
+    color: #808080;
   }
   margin-bottom: 0px;
+  border-radius: 0px;
 }
+
+/////// Blog ////////
+
+
+// Show //
+
+
+

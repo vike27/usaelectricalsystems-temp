@@ -1,31 +1,25 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="col-sm-6 col-sm-offset-3">
+    <p id="notice"><%= notice %></p>
+      </br>
+      <h1 style="text-align:center">USA Electrical Systems Blog</h1>
+      </br>
+      </br>
+        <div>
+          <% @blogs.each do |blog| %>
+              <div style="font-size:18px"><%= blog.title %></div>
+              </br>
+              <div style="font-size:16px;"><i><%= blog.heading %></i></div>
+            <hr>
+          <% end %>
+        </div>
 
-<h1>Listing Blogs</h1>
+      <br>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Heading</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.heading %></td>
-        <td><%= blog.body %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <div style="text-align:right">
+    <% if current_admin.present? %>
+      <%= link_to 'New Blog Post', new_blog_path %>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Blog', new_blog_path %>
+    </div>
+  </div>
+</div>
