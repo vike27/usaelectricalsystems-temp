@@ -10,7 +10,7 @@
           <% @services.each do |service| %>
               <div style="font-size:18px"><%= service.title %></div>
               </br>
-              <div style="font-size:16px;"><i><%= service.heading %></i></div>
+              <div style="font-size:16px;"><i><%= service.heading1 %></i></div>
             <hr>
           <% end %>
           <% end %>
@@ -47,7 +47,7 @@
   <tbody>
     <% @services.each do |service| %>
       <tr>
-        <td><%= service.service %></td>
+        <td><%= service.title %></td>
         <td><%= service.heading1 %></td>
         <td><%= service.body1 %></td>
         <td><%= service.heading2 %></td>
