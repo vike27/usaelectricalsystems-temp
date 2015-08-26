@@ -7,7 +7,7 @@
       </br>
         <div>
           <% @blogs.each do |blog| %>
-              <div style="font-size:18px"><%= blog.title %></div>
+              <div style="font-size:18px"><%= link_to "#{blog.title}", blog %></div>
               </br>
               <div style="font-size:16px;"><i><%= blog.heading %></i></div>
             <hr>

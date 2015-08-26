@@ -1,35 +1,41 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="col-sm-6 col-sm-offset-3">
+    <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Service:</strong>
-  <%= @service.title %>
-</p>
+      </br>
+      </br>
+      <h1>
+        <%= @service.title %>
+      </h1>
 
-<p>
-  <strong>Heading1:</strong>
-  <%= @service.heading1 %>
-</p>
+      <hr>
 
-<p>
-  <strong>Body1:</strong>
-  <%= @service.body1 %>
-</p>
+      <h2>
+        <%= @service.heading1 %>
+      </h2>
 
-<p>
-  <strong>Heading2:</strong>
-  <%= @service.heading2 %>
-</p>
+      <p>
+        <%= @service.body1 %>
+      </p>
 
-<p>
-  <strong>Body2:</strong>
-  <%= @service.body2 %>
-</p>
+      <h2>
+        <%= @service.heading2 %>
+      </h2>
 
-<p>
-  <strong>Information:</strong>
-  <%= @service.information %>
-</p>
+      <p>
+        <%= @service.body2 %>
+      </p>
 
-<%= link_to 'Destroy', @service, method: :delete, data: { confirm: 'Are you sure?' } %> |
-<%= link_to 'Edit', edit_service_path(@service) %> |
-<%= link_to 'Back', services_path %>
+      <p>
+        <%= @service.information %>
+      </p>
+
+      <% if current_admin.present? %>
+      <%= link_to 'Destroy', @service, method: :delete, data: { confirm: 'Are you sure?' } %> |
+      <%= link_to 'Edit', edit_service_path(@service) %> |
+      <%= link_to 'Back', services_path %>
+      <% end %>
+
+  </div>
+</div>
+

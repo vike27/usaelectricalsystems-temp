@@ -8,7 +8,7 @@
         <div>
           <% unless @services.empty? %>
           <% @services.each do |service| %>
-              <div style="font-size:18px"><%= service.title %></div>
+              <div style="font-size:18px"><%= link_to "#{service.title}", service %></div>
               </br>
               <div style="font-size:16px;"><i><%= service.heading1 %></i></div>
             <hr>
