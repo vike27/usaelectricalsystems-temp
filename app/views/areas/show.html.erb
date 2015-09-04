@@ -7,6 +7,10 @@
         <%= @area.city %>
       </h1>
 
+      <div>
+        <%= image_tag @area.area_picture.url(:medium).to_s %>
+      </div>
+
       <h2>
         <%= @area.heading1 %>
       </h2>

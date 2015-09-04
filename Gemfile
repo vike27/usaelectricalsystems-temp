@@ -14,6 +14,12 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# images
+gem 'carrierwave'
+
+# MiniMagick for image resizing
+gem "mini_magick"
+
 # devise for authentication
 gem 'devise'
 # Use jquery as the JavaScript library
