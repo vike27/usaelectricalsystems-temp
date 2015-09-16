@@ -4,8 +4,11 @@ class BlogPictureUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
-  # include CarrierWave::MiniMagick
+  include CarrierWave::MiniMagick
 
+  version :medium do
+    process resize_to_fill: [600,400]
+  end
   # Choose what kind of storage to use for this uploader:
   storage :file
   # storage :fog

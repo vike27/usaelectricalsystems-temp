@@ -10,6 +10,10 @@
 
       <hr>
 
+      <div>
+        <%= image_tag @service.service_picture.url(:medium).to_s %>
+      </div>
+
       <h2>
         <%= @service.heading1 %>
       </h2>

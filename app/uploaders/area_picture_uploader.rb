@@ -9,6 +9,7 @@ class AreaPictureUploader < CarrierWave::Uploader::Base
   version :medium do
     process resize_to_fill: [600,400]
   end
+  
   # Choose what kind of storage to use for this uploader:
   storage :file
   # storage :fog

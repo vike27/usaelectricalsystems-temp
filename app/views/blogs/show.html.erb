@@ -9,6 +9,9 @@
     </h1>
     </br>
     <hr>
+    <div>
+      <%= image_tag @blog.blog_picture.url(:medium).to_s %>
+    </div>
     </br>
     <h4>
       <%= @blog.heading %>
