@@ -18,8 +18,9 @@
     </h4>
     </br>
     <p>
-      <%= @blog.body %>
-    </p>
+      <%= simple_format(@blog.body) %>
+    <p>
+
      <% if current_admin.present? %>
     <%= link_to 'Destroy', @blog, method: :delete, data: { confirm: 'Are you sure?' } %> |
       <%= link_to 'Edit', edit_blog_path(@blog) %> 

@@ -20,6 +20,9 @@ gem 'carrierwave'
 # MiniMagick for image resizing
 gem "mini_magick"
 
+# Text Editor
+gem 'bootsy'
+
 # devise for authentication
 gem 'devise'
 # Use jquery as the JavaScript library
